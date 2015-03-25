@@ -2,6 +2,13 @@
 
 $GLOBALS['config'] = array(
 
+	'github' => array(
+		'api_url' => 'https://api.github.com/repos/lofex/CMS',
+		'raw_url' => 'https://raw.github.com/lofex/CMS/master', 
+		'git_url' => 'https://github.com/lofex/CMS',
+		'readme' => 'https://raw.githubusercontent.com/lofex/CMS/master/README.md'
+	),
+
 	'mysql' => array(
 		'host' => '127.0.0.1',
 		'username' => 'root',
@@ -29,5 +36,9 @@ $GLOBALS['config'] = array(
 		'session_name' => 'LofeX-Session',
 		'token_name' => 'token'
 	),
+
+	'version' => array(
+		'last' => '0.0.3'
+	)
 
 );

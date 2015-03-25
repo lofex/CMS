@@ -6,4 +6,4 @@ Author: Michal Nowak-Wacker
 
 Date: 22.03.2015
 
-Version: 0.0.3
+Version:0.0.3

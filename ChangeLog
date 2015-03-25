@@ -7,16 +7,17 @@ Site: www.lofex.pl
 Co działa:
 -Autoload
 -Init
--Klasa Config, Database, Session, Token, Update ?
+-Klasa Config, Database, Session, Token, Update
 
 ToDo:
--Stworzenie panelu admina (Prosty)
+-Stworzenie panelu admina // (Prosty)
 -Rejestracja użytkowników
 -Logowanie i zmiana hasła
 -Ustawienia
--Aktualizacja
 -Stworzenie dummy klas
 -Dodanie komentarzy do klas
+-Informacja na stronię o dostępnej aktualizacji
+-Automatyczne pobieranie nowszego skryptu z Githuba
 
 
 Versions:
@@ -27,7 +28,12 @@ V.0.0.1
 -Process niszczący sesje i jej dane
 
 V.0.0.2
--Stworzone repo na Github.io i wrzucono pliki na serwer. 'https://github.com/dev-lofex/cms'
+-Stworzone repo na Github.io i wrzucono pliki na serwer. // 'https://github.com/dev-lofex/cms'
 -Stworzono baze danych
 -Dodano obsługę bazy danych
 -Generowanie losowych tokenów
+
+V.0.0.3
+-Dodano funkcję 'update()' do klasy Config. // Od teraz można aktualizować plik konfiguracji.
+-Dodano funkcję 'checkUpdate()' do klasy Update. // Funkcja sprawdza aktualną wersję na githubie.
+-Uaktualniono plik konfiguracji
