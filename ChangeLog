@@ -1,0 +1,33 @@
+LofeX-CMS
+
+Author: Michal Nowak-Wacker
+Created: 22.03.2015
+Site: www.lofex.pl
+
+Co działa:
+-Autoload
+-Init
+-Klasa Config, Database, Session, Token, Update ?
+
+ToDo:
+-Stworzenie panelu admina (Prosty)
+-Rejestracja użytkowników
+-Logowanie i zmiana hasła
+-Ustawienia
+-Aktualizacja
+-Stworzenie dummy klas
+-Dodanie komentarzy do klas
+
+
+Versions:
+V.0.0.1
+-Stworzony szkielet aplikacji
+-Uaktualniono plik konfiguracji
+-Dodano sesje
+-Process niszczący sesje i jej dane
+
+V.0.0.2
+-Stworzone repo na Github.io i wrzucono pliki na serwer. 'https://github.com/dev-lofex/cms'
+-Stworzono baze danych
+-Dodano obsługę bazy danych
+-Generowanie losowych tokenów
