@@ -18,12 +18,25 @@ class Update {
 	public function checkUpdate() {
 
 		$this->content = file_get_contents($this->url);
-		
-		if(preg_match("/Version:[^.].[^.].[^.]/", $content, $version)) {
+
+		if(preg_match("/Version:[^.].[^.].[^.]/", $this->content, $version)) {
 			
 			$split = explode(':', $version[0]);
-			$this->version = $split[1];
+
+			$this->gitVersion = $split[1];
 			
+		} elseif(preg_match("/Version: [^.].[^.].[^.]/", $this->content, $version)) {
+
+			str_replace(' ', '', $version[0]);
+
+			$split = explode(':', $version[0]);
+
+			$this->gitVersion = $split[1];
+
+		} else {
+
+			return FALSE;
+
 		}
 		
 	}
